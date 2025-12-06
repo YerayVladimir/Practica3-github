@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +9,8 @@
     <!-- Estilos personalizados -->
     <style>
         body {
-            background-color: #f8f9fa;
-            /* Fondo claro */
+            background-color: #f8f9fa; /* Fondo claro */
         }
-
         .section-title {
             border-bottom: 2px solid #007bff;
             padding-bottom: 5px;
@@ -21,7 +18,6 @@
         }
     </style>
 </head>
-
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -43,42 +39,41 @@
         <div class="row mb-4">
             <div class="col">
                 <h2 class="section-title">Definir lo que hacen los siguientes comandos:</h2>
-                Muestra el estado actual del repositorio. Indica qué archivos han sido modificados,
-                cuáles están en el área de preparación (staging area) listos para commit, y cuáles
-                son archivos nuevos que aún no están siendo rastreados por Git. También muestra la
-                rama actual en la que te encuentras trabajando.
-                </p>
+                <p>git status</p>
+                <p>git init</p>
+                    <div class="command-box">
+                    <p class="command-name">git add .</p>
+                    <p class="command-description">
+                        Agrega todos los archivos modificados y nuevos del directorio actual
+                        al área de preparación (staging area). El punto "." indica "todos los archivos".
+                        Sirve para preparar múltiples archivos para el commit.
+                    </p>
+                    </div>
+                    <div class="command-box">
+                    <p class="command-name">git add ruta_del_archivo</p>
+                    <p class="command-description">
+                        Agrega un archivo específico al área de preparación (staging area).
+                         Se usa cuando solo quieres preparar un archivo en particular para el próximo commit,
+                         en lugar de todos. Debes reemplazar <code>ruta_del_archivo</code> por la ruta real,
+                         por ejemplo: <code>git add carpeta/archivo.txt</code>.
+                    </p>
+                    </div>
+                <p>git restore .</p>
+                <p>git restore ruta_del_archivo</p>
+                <p>git reset --soft HEAD~1</p>
+                <p>git restore --staged .</p>
+                <p>git clean -f</p>
+                <p>git merge --abort</p>
+                  
+                
             </div>
-
-            <!-- git init -->
-            <div class="command-box">
-                <p class="command-name">git init</p>
-                <p class="command-description">
-                    Inicializa un nuevo repositorio Git en el directorio actual. Crea una carpeta oculta
-                    llamada .git que contiene toda la estructura necesaria para que Git pueda empezar a
-                    rastrear los cambios en tus archivos. Este es el primer comando que se ejecuta cuando
-                    quieres comenzar a usar control de versiones en un proyecto nuevo.
-                </p>
-            </div>
-
-            <p>git add .</p>
-            <p>git add ruta_del_archivo</p>
-            <p>git restore .</p>
-            <p>git restore ruta_del_archivo</p>
-            <p>git reset --soft HEAD~1</p>
-            <p>git restore --staged .</p>
-            <p>git clean -f</p>
-            <p>git merge --abort</p>
-
-
         </div>
-    </div>
 
 
 
 
 
-
+     
     </div>
 
     <!-- Footer -->
@@ -89,5 +84,4 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
