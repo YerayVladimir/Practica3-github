@@ -60,6 +60,24 @@
                     quieres comenzar a usar control de versiones en un proyecto nuevo.
                 </p>
             </div>
+            <!-- git reset --soft HEAD~1 -->
+            <div class="command-box">
+                <p class="command-name">git reset --soft HEAD~1</p>
+                <p class="command-description">
+                    deshace el último commit, pero mantiene todos los cambios de ese commit en el área de preparación 
+                    (staging area), dejando tu directorio de trabajo intacto; es útil para corregir un commit reciente 
+                    (cambiar el mensaje o añadir archivos) sin perder el trabajo hecho, ya el HEAD se mueve al commit
+                    anterior y los cambios quedan listos para un nuevo commit. 
+                </p>
+            </div>
+            <!-- git restore --staged -->
+            <div class="command-box">
+                <p class="command-name">git restore --staged</p>
+                <p class="command-description">
+                   Quita un archivo del área de staging sin borrar los cambios realizados. 
+                   Solo lo desmarca para que no se incluya en el próximo commit. 
+                </p>
+            </div>
 
             <p>git add .</p>
             <p>git add ruta_del_archivo</p>
