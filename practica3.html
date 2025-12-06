@@ -58,6 +58,24 @@
                          por ejemplo: <code>git add carpeta/archivo.txt</code>.
                     </p>
                     </div>
+                    <div class="command-box">
+    <p class="command-name">git restore .</p>
+    <p class="command-description">
+        Restaura todos los archivos del directorio actual a su último estado 
+        confirmado (último commit). Deshace todos los cambios no guardados 
+        sin afectar commits anteriores.
+    </p>
+</div>
+
+<div class="command-box">
+    <p class="command-name">git restore ruta_del_archivo</p>
+    <p class="command-description">
+        Restaura únicamente el archivo indicado a su versión del último commit. 
+        Es útil cuando quieres deshacer cambios solo en un archivo específico 
+        sin afectar el resto.
+    </p>
+</div>
+
                 <p>git restore .</p>
                 <p>git restore ruta_del_archivo</p>
                 <p>git reset --soft HEAD~1</p>
