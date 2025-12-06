@@ -67,10 +67,31 @@
             <p>git restore ruta_del_archivo</p>
             <p>git reset --soft HEAD~1</p>
             <p>git restore --staged .</p>
-            <p>git clean -f</p>
-            <p>git merge --abort</p>
 
+             <!-- git clean -f -->
+            <div class="command-box">
+                <p class="command-name">git clean -f</p>
+                <p class="command-description">
+                    El comando git clean -f se utiliza para eliminar del directorio de trabajo todos los archivos
+                    que no están siendo rastreados por Git (no han sido agregados con git add ni forman parte de ningún commit); 
+                    la opción -f significa force y es obligatoria para evitar borrados accidentales, ya que estos archivos se eliminan definitivamente; 
+                    este comando no borra archivos que sí están en seguimiento (tracked), 
+                    solo los no rastreados, y si quieres ver primero qué se eliminaría sin borrarlo puedes usar git clean -n.
+                </p>
+            </div>
 
+            <!-- git merge --abort -->
+            <div class="command-box">
+                <p class="command-name">git merge --abort</p>
+                <p class="command-description">
+                   El comando git merge --abort se utiliza para cancelar un proceso de fusión (merge) 
+                   que está en conflicto, devolviendo el repositorio exactamente al estado en el que 
+                   estaba antes de intentar hacer el merge; es decir, deshace todos los cambios que Git 
+                   aplicó durante la fusión fallida y elimina los conflictos pendientes, permitiéndote volver
+                   a intentar el merge más tarde o tomar otra decisión, y solo funciona si el proceso de merge aún no ha sido completado con un commit.
+                </p>
+            </div>
+            
         </div>
     </div>
 
